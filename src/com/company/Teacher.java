@@ -1,6 +1,6 @@
 package com.company;
 
-public final class Teacher extends Person{
+public class Teacher extends Person{
     private String whichSubject;
 
     public Teacher(String name, String nationality, Profession profession, Enum anEnum,String whichSubject) {

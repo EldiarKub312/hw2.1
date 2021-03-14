@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Students students = new Students("Леонардо","DI.KAPRIO",new Profession("Programming "),Nationality.KYRGYZ,18);
+        Students students = new Students("Леонардо","DI.KAPRIO",new Profession("Programming "),Nationality.KYRGYZ,"Актер");
         students.getInfo();
         students.findAge(18,2021);
 

@@ -36,7 +36,7 @@ public class Person {
         System.out.println("Год рождения: " + findWasBorn);
     }
 
-    public void findAge(int year, int wasBorn, double time) {
+    public final void findAge(int year, int wasBorn, double time) {
         int findAge = year - wasBorn;
         System.out.println(findAge);
     }
