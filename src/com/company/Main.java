@@ -3,10 +3,25 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Teacher teacher = new Teacher();
-        teacher.getName("Adilet");
-        teacher.getPerson();
 
-        System.out.println(teacher.getInfo());
+        Students students = new Students("Леонардо","DI.KAPRIO",new Profession("Programming "),Nationality.KYRGYZ,18);
+        students.getInfo();
+        students.findAge(18,2021);
+
+        System.out.println("-----------------------------------");
+
+        Teacher teacher = new Teacher("Дуйшон","ON.KRUT",new Profession("Мугалим "),Nationality.KYRGYZ,"Кыргыз тили");
+        teacher.findAge(42,1979);
+        teacher.getInfo();
+
+        System.out.println("-----------------------------------");
+
+        Teacher teacher1 = new Teacher("Камила","PRINCESS",new Profession("Космонавтка "),Nationality.KYRGYZ,"КОСМОС");
+        teacher1.findAge(42,1979);
+        teacher1.getInfo();
+
+
+
+
     }
 }

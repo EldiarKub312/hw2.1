@@ -1,24 +1,23 @@
 package com.company;
 
-public class Teacher extends Students {
-    private String name;
+public final class Teacher extends Person{
+    private String whichSubject;
 
-
-    public Teacher() {
+    public Teacher(String name, String nationality, Profession profession, Enum anEnum,String whichSubject) {
+        super(name, nationality, profession, anEnum);
+        this.whichSubject = whichSubject;
     }
 
-    public Teacher(String name,Person person) {
-        this.name = name;
-        super.getPerson(person);
+
+    public String getWhichSubject() {
+        return whichSubject;
     }
 
-    public String getName(String sharik) {
-        return name;
-    }
-    public String getInfo() {
-        return super.getInfo() + "\nName = " + name + "\nPerson ";
+    @Override
+    public void findAge(int age, int year) {
+        super.findAge(age,year);
+
+
     }
 
-    public void getPerson() {
-    }
 }
